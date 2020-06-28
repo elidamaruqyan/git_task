@@ -1,16 +1,6 @@
-const getRandomLetter = (str) => {
-    let result = '';
-    if (typeof str === 'string') {
-        for (let i = 0; i < 1; i++) {
-            const randomNumber = Math.floor(Math.random() * str.length);
-            result += str.charAt(randomNumber);
-        }
-
-        return result;
-    }
-
-    throw new Error("invalid value");
+const getRandomNumber = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min);
 };
 
-getRandomLetter(2);
-getRandomLetter(10);
+getRandomNumber(1, 5);
+getRandomNumber(1, 50);
