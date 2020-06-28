@@ -13,3 +13,4 @@ const getRandomLetter = (str) => {
 };
 
 getRandomLetter(2);
+getRandomLetter(10);
