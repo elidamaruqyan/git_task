@@ -12,5 +12,6 @@ const getRandomLetter = (str) => {
     throw new Error("invalid value");
 };
 
-getRandomLetter(2);
-getRandomLetter(10);
+let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+getRandomLetter(str);
